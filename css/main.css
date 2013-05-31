@@ -1,0 +1,309 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body { 
+    height: 100%; 
+    font-family: 'Futura', Verdana, Sans-Serif;
+}
+
+html {
+    height: 100%;
+    background-color: #000;
+}
+
+iframe {
+    background-color: #000;
+}
+
+#title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#holder {
+    width: 600px;
+    height: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: orange;
+}
+
+#svg-fun {
+    position: absolute;
+    float:left;
+    pointer-events: none;
+    width: 600px;
+    height: 800px;
+    background-image: url(../img/skull-blocker.png);
+    z-index: 2;
+    margin-left: -600px;
+}
+
+#blocker {
+    position: absolute;
+    background-image: url(../img/skull-blocker.png);
+    width: 600px;
+    height: 800px;
+    float: left;
+    z-index: 2;
+    pointer-events:none;
+}
+
+#container {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 800px;
+    /*-webkit-mask-image: url(../img/skull.png);*/
+
+}
+
+#more-container {
+    position: fixed;
+    width: 300px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -78px;
+    z-index: 1000;
+}
+
+a#down, a#up {
+    float: left;
+    padding: 20px;
+    width: 70px;
+    margin-left: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px; 
+}
+
+a#down, a#up {
+    background: #fff;
+}
+
+#modal {
+    position: absolute;
+    width: 600px;
+    min-height: 300px;
+    z-index: 10000;
+    left: 50%;
+    top: 0;
+    margin-left: -300px;
+}
+
+#modal #modalContent {
+    position: absolute;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#modal #modalContent img {
+    width: 600px;
+}
+
+#modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#modal #loading {
+    position: absolute;
+    width: 80px;
+    font-size: 14px;
+    top: 100px;
+    left: 50%;
+    text-transform: uppercase;
+    margin-left: -40px;
+    padding: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-align: center;
+}
+
+#modal a#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#modal #caption {
+    font-family: 'Helvetica', Verdana, Sans-Serif;
+    position: absolute;
+    text-align: left;
+    bottom: -50px;
+    left: 0;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 10;
+}
+
+#modal #caption a {
+    color: #E2F8FD;
+}
+
+.vid-container {
+ 
+}
+
+.items {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+}
+
+.items img {
+    position: relative;
+    width: 375px;
+    left: 50%;
+    margin-left: -160px;
+}
+
+.items img {
+    opacity: 1;
+    -webkit-transition:opacity 0.5s ease;
+    -moz-transition:opacity 0.5s ease;
+}
+
+.items img:hover {
+    opacity: 0.5;
+}
+
+.items .meta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #e51937;
+    font-family: 'Futura', Verdana, Sans-Serif;
+    font-size: 12px;
+}
+
+.items .meta a {
+    color: #e51937;
+    font-weight: bold;
+}
+
+
